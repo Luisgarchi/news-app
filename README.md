@@ -8,4 +8,8 @@ Make sure you have docker installed.
 
 ``` git clone --branch basic-infrastructure https://github.com/Luisgarchi/news-app.git```
 
+``` chmod +x init-mongo.sh ```
+
 ``` docker compose up --build -d```
+
+

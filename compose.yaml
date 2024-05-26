@@ -30,6 +30,8 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
+      - ./init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
+      - ./data/data.csv:/data/data.csv
 
 volumes:
   mongo-data:
